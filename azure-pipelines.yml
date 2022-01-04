@@ -1,9 +1,5 @@
 steps:
 
-- script: |
-    pip install pyautogui
-
-  displayName: 'pyautogui'
 
 - task: PythonScript@0
   inputs:
@@ -11,9 +7,7 @@ steps:
     script: |
       print('Hello world 1')
       import pyautogui
-      screenWidth, screenHeight = pyautogui.size()
-      screenWidth, screenHeight
-      (1920, 1080)
+      1920, 1080 = pyautogui.size()
       print('Hello world 2')
       pyautogui.moveTo(100, 150)
       pyautogui.click(100, 200)
