@@ -1,5 +1,8 @@
 steps:
+- script: |
+    pip install pyautogui
 
+  displayName: 'pytest'
 
 - task: PythonScript@0
   inputs:
