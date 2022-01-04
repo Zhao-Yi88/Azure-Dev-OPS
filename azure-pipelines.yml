@@ -10,8 +10,7 @@ steps:
     script: |
       print('Hello world 1')
       import pyautogui
-      import os
-      os.environ['Display']=':0'
+      DISPLAY=:0 python
       screenWidth, screenHeight = pyautogui.size()
       currentMouseX, currentMouseY = pyautogui.position()
       print('Hello world 2')
