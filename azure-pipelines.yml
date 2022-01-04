@@ -11,6 +11,9 @@ steps:
     script: |
       print('Hello world 1')
       import pyautogui
+      screenWidth, screenHeight = pyautogui.size()
+      screenWidth, screenHeight
+      (1920, 1080)
       print('Hello world 2')
       pyautogui.moveTo(100, 150)
       pyautogui.click(100, 200)
