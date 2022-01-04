@@ -5,3 +5,7 @@ steps:
 
   displayName: 'pyautogui'
 
+- task: AzureCLI@2
+  inputs:
+    scriptLocation: 'scriptPath'
+    scriptPath: 
