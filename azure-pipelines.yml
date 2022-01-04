@@ -7,7 +7,8 @@ steps:
     script: |
       print('Hello world 1')
       import pyautogui
-      1920, 1080 = pyautogui.size()
+      screenWidth, screenHeight = pyautogui.size()
+      currentMouseX, currentMouseY = pyautogui.position()
       print('Hello world 2')
       pyautogui.moveTo(100, 150)
       pyautogui.click(100, 200)
