@@ -5,7 +5,13 @@ steps:
 
   displayName: 'pyautogui'
 
-- task: AzureCLI@2
+- task: PythonScript@0
   inputs:
-    scriptLocation: 'scriptPath'
-    scriptPath: 
+    scriptSource: 'inline'
+    script: |
+      print('Hello world 1')
+      import pyautogui
+      print('Hello world 2')
+      pyautogui.moveTo(100, 150)
+      pyautogui.click(100, 200)
+      pyautogui.move(400, 0)
